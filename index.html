@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Laudyeneth portafolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><!--fuente desde: google fonts-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--fuente de icinos-->
+        <link rel="stylesheet" href="css/normalize.css"> <!--Esto sobreescribe todos los estilos para unificar que se vea asi en tdos los navegadores, esto para los estilos unificados-->
+        <link rel="stylesheet" href="css/style.css"> <!--Esta es una ruta relativa a ese archivo css-->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+
+    <body>
+  
+        <!----SECCION DE MENU NAVEGACION----->
+        <div class="home-wrapper">
+            <header> <!--esta referenciado en archivo style .container-->
+                <div class="container">
+                    <img id="foto" src="images/logo.jpg" alt="logo"> 
+                    <nav>
+                        <a href="#home" class="active">INICIO</a> <!--la class active, permite activar este vinculo-->
+                        <a href="#perfil">PERFIL</a>
+                        <a href="#habilidades">HABILIDADES</a>
+                        <a href="#proyectos">PROYECTOS</a>
+                        <a href="#formacion">FORMACION</a>
+                        <a href="#contacto">CONTACTO</a>
+                    </nav><!--s-->  
+                </div>
+            </header>
+            
+            <!----SECCION DE REDES SOCIALES----->
+            <section id="home"><!--esta clase me permitira referenciar esta seccion en el css, ese id lo usaré como selector)-->
+                <h1>Laudy Navarrete Rodríguez</h1><!--en este titulo la palabra aplicaciones es en negrilla y lo demas no, por eso hay que envolverla en etiqueta strong-->
+                <div class="divider"></div>
+                <p>Ingeniera de sistemas</p>
+                <!--div (me permite agrupar en una parte definida de la pantalla, los link hacia redes sociales)-->
+                <div class="social"> <!--le pongo una clase para poder referenciar en el css-->
+                    <!--Reemplazo palabra facebook, twitter y github; por la etiqueta i para poder insertar el icono-->
+                    <a href="https://co.linkedin.com/in/laudy-yeneth-navarrete-rodr%C3%ADguez-7a0a1860" target="_blank""><i class="fa fa-linkedin"></i></a> 
+                    <a href="https://www.facebook.com/laudyeneth" target="_blank""><i class="fa fa-facebook"></i></a>
+                    <a href="https://github.com/laudyeneth" target="_blank""><i class="fa fa-github"></i></a>
+                </div>
+            </section>
+        </div>
+
+        <!----SECCION DE PERFIL----->
+        <section id="perfil" class="container">
+            <h2>Perfil</h2>
+
+            <div class="box"> <!--class box, para referenciar en css y poder presentar en cajas ese contenido-->
+                <img src="images/foto.jpg" alt="Foto">
+                <h3>¡Hola! Soy Laudy Navarrete Rodríguez</h3>
+                <p>Soy Ingeniero en sistemas, egresada de la UNAD y originaria de Colombia, me apasiona todo lo relacionado con la programación, ya sea en desarrollo de sistemas de software especializado, plataformas web. Soy Desarrolladora bak-end, apasionada por las últimas tendencias de desarrollo.</p>
+                <p>Soy docente de las áreas de tecnología, informática y dibujo técnico, en los niveles de formación de preescolar, primaria y bachillerato.</p>
+                <p>Soy una persona con iniciativa, proactiva, creativa, organizada, con capacidades de trabajo en equipo, ya que entablo buenas relaciones interpersonales. Me caracterizo por tener habilidades para emprender proyectos, abordar nuevas herramientas informáticas o tecnológicas. La recursividad y buen ritmo de aprendizaje me facilitan la adaptación a las diferentes labores que emprenda.</p>
+            </div>
+        </section>
+
+        <!----SECCION DE HABILIDADES----->
+        <section id="habilidades" class="container">
+            <h2>Habilidades</h2>
+            <div class="box"> 
+                <img src="images/habilidades.png" alt="Icono de habilidades">
+                <h3><strong>Habilidades Profesionales:</strong></h3>
+                <ul>
+                  <li>HTML y CSS</li>
+                  <li>Bootstrap</li>
+                  <li>Git y Github</li>
+                  <li>Ruby</li>
+                  <li>Ruby on Rails</li>
+                  <li>JavaScript</li>
+                  <li>JQuery y Ajax</li>
+                  <li>React y Redux</li>
+                  <li>Java y PHP</li>
+                  <li>Herramientas ofimáticas.</li>
+                </ul>
+                <h3><strong>Habilidades Transversales:</strong></h3>
+                <ul>
+                  <li>Profesional multidisciplinario.</li>
+                  <li>Trabajo en equipo.</li>
+                  <li>Responsabilidad y honestidad.</li>
+                  <li>Comunicación asertiva.</li>
+                  <li>Proactividad.</li>
+                  <li>Capacidad de aprendizaje continuo.</li>
+                  <li>Conocimientos en diseño.</li>
+                  <li>Manejo de Illustrator y Corel Draw.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!----SECCION DE PROYECTOS----->
+        <section id="proyectos"> <!--hace referencia a #formacion del div de proyectos-->
+            <!--clase container para que no se expanda en la pantalla y se vea en columnas-->
+            <div class ="container">  
+                <h2>Proyectos</h2>
+                <div class="box">
+                    <img src="images/proyectos/landingJaguar.jpg" alt="landingJaguar">
+                    <h3>Landing Jaguar</h3>
+                    <p>Página web desarrollada en bootcamp de Make it Real.</p>
+                    <p>Bogotá, 2018.</p>
+                </div>
+                <div class="box">
+                    <img src="images/proyectos/studioDev.jpg" alt="studioDev">
+                    <h3>Studio Dev</h3>
+                    <p>Página web desarrollada en bootcamp de Make it Real.</p>
+                    <p>Bogotá, 2018.</p>
+                </div>
+                <div class="box">
+                    <img src="images/proyectos/portafolio1.jpg" alt="portafolio">
+                    <h3>Porafolio personal</h3>
+                    <p>Página web desarrollada en bootcamp de Make it Real.</p>
+                    <p>Bogotá, 2018.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!----SECCION DE FORMACION----->
+        <section id="formacion"> <!--hace referencia a #formacion del div de formacion-->
+            <!--clase container para que no se expanda en la pantalla y se vea en columnas-->
+            <div class ="container">  
+                <h2>Formación</h2>
+                <div class="box">
+                    <img src="images/habilidades/universidad.png" alt="educación profesional">
+                    <h3>Universidad Nacional Abierta y a Distancia - UNAD</h3>
+                    <p>Egresada de Ingeniería de sistemas.</p>
+                    <p>Bogotá, 2017.</p>
+                </div>
+                <div class="box">
+                    <img src="images/habilidades/universidad.png" alt="educación profesional">
+                    <h3>Universidad Pedagógica Nacional - UPN</h3>
+                    <p>Egresada de Licenciatura en diseño tecnológico.</p>
+                    <p>Bogotá, 2009.</p>
+                </div>
+                <div class="box">
+                    <img src="images/habilidades/curso.png" alt="educación continuada">
+                    <h3>Servicio Nacional de Aprendizaje - SENA</h3>
+                    <p>Estratégias y médios para El aprendizaje de tecnologías.</p>
+                    <p>Bogotá, 2012.</p>
+                </div>
+                <div class="box">
+                    <img src="images/habilidades/curso.png" alt="educación continuada">
+                    <h3>Servicio Nacional de Aprendizaje - SENA</h3>
+                    <p>Manejo de Adobe Photoshop.</p>
+                    <p>Bogotá, 2011.</p>
+                </div>
+                <div class="box">
+                    <img src="images/habilidades/curso.png" alt="educación continuada">
+                    <h3>Servicio Nacional de Aprendizaje - SENA</h3>
+                    <p>Corel Draw: utilización de herramientas de diseño vectorial.</p>
+                    <p>Bogotá, 2011.</p>
+                </div>
+                <div class="box">
+                    <img src="images/habilidades/curso.png" alt="educación continuada">
+                    <h3>Servicio Nacional de Aprendizaje - SENA</h3>
+                    <p>CoreCorel Draw: texto y organización de objetos.</p>
+                    <p>Bogotá, 2011.</p>
+                </div>
+                <div class="box">
+                    <img src="images/habilidades/curso.png" alt="educación continuada">
+                    <h3>Servicio Nacional de Aprendizaje - SENA</h3>
+                    <p>Corel Draw: transformación de objetos y efectos especiales.</p>
+                    <p>Bogotá, 2011.</p>
+                </div>
+                <div class="box">
+                    <img src="images/habilidades/curso.png" alt="educación continuada">
+                    <h3>Universidad Distrital Francisco José de Caldas - IEEE.</h3>
+                    <p>Taller Robótica móvil.</p>
+                    <p>Bogotá, 2007.</p>
+                </div>
+            </div>
+        </section>
+
+        <!----SECCION DE CONTACTO----->
+        <section id="contacto">
+            <h2>Pongase en Contacto</h2>
+            <form>
+                <!--los div me permite mostrar en bloque estos cuadros--->
+                <div> <input type="text" placeholder="Escriba su email"> </div> 
+                <!--el input (meter texto), el placeholder (texto que muestra)--->
+                <div> <textarea rows="10" placeholder="Escriba su mensaje"></textarea> </div>
+                <button>ENVIAR</button>
+            </form>
+        </section>
+
+        <!----SECCION REDES SOCIALES FINAL----->
+        <div id="final">
+                <a href="https://www.facebook.com/laudyeneth" target="_blank" class="fa fa-facebook"</a>
+                <a href="https://plus.google.com/u/0/118057548916863751351" target="_blank" class="fa fa-google"></a>
+                <a href="https://co.linkedin.com/in/laudy-yeneth-navarrete-rodr%C3%ADguez-7a0a1860" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/laudyeneth" target="_blank" class="fa fa-github"></a>
+                <a href="skype:laudyeneth?userinfo" target="_blank" class="fa fa-skype"></a>
+                <a href="mailto:laudyeneth@hotmail.com" target="_blank" class="fa fa-address-book"></a>
+                <a href="skype:+3123318113" target="_blank" class="fa fa-phone"></a>
+            </div>
+
+    </body>
+</html>

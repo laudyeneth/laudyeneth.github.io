@@ -1,0 +1,333 @@
+/*-----ANCHO DE TODO SIN PADDING-----*/
+* { box-sizing: border-box; } 
+
+/*-----ESTILOS DE LA LETRA DE LA PAGINA (google fonts)-----*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+    /*-----ESTILOS DE LA IMAGEN DE FONDO-----*/
+.home-wrapper img {
+    position:absolute; left:20px;
+    width: 12%;
+    height: 90%;
+}
+
+.home-wrapper {
+    background: linear-gradient(rgba(165, 159, 171, 0.35), rgba(0, 0, 0, 0.74)), url('../images/background.jpg') no-repeat center top; 
+    background-size: cover;
+    color: white;
+}
+
+header {
+    position: fixed;
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgb(48, 48, 48, 0.5);
+}
+
+header img {
+    width: 170px;
+}
+
+    /*-----ESTILOS DEL MENU DE NAVEGACION-----*/
+header nav {
+    float: right; /* menu flota (arriba) a la derecha*/
+    margin-top: 10px; /*que ponga este margen arriba al menu */
+}
+
+header nav a {
+    color: white; /*fuente es blanco*/
+    font-weight: bold; /*negrilla*/
+    text-decoration: none;/* no subrayado a la fuente*/
+    margin-left: 10px;/*espacio */
+    padding: 10px 15px;/*10 pixeles arriba y abajo; y 15 pixeles a los lados*/
+}
+
+header nav a.active{ /* menu inicio para activarlo*/
+    background: #81d8d0;
+    border-radius: 3px; /*redondea los bordes del badgraund */
+}
+
+    /*-----ESTILOS MENU-----*/
+#home {
+    text-align: center;/*texto alineado al centro*/
+    padding: 225px 0 150px;
+}
+
+#home h1 { 
+    font-size: 68px; 
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 40 px;
+}
+
+#home p { /*incrementamos el tamaño deletra del parrafo*/
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+/*-----ESTILOS PARA LA SECCION DE REDES SOCIALES-----*/
+
+#home .social { 
+    margin-top: 80px;
+}
+
+#home .social a {  
+    color: white; /*color blanco*/
+    display: inline-block;
+    border-radius: 50%; /*para que se vea redondo*/
+    background-color: #231a24; 
+    font-size: 26px; /*tamaño de la fuente*/
+    font-weight: bold; /*negrilla*/
+    height: 60px; /*el alto*/
+    width: 60px; /*cel ancho*/
+    line-height: 55px;  /*alto de linea, para centrar*/
+    margin-right: 10px; /*margen para separarlos*/
+    /*efecto de trasicion de color*/
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+/*para resaltar iconos sociales*/
+#home .social a:hover {
+    background-color: #81d8d0; 
+} 
+
+    /*-----ESTILOS PARA SECCION PERFIL-----*/
+#perfil img {
+    width: 12%;
+    border-radius: 60px;
+    display:block;
+    margin:auto;
+}
+
+#perfil .box { 
+    background-color:#F5F5F5;
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border:2px solid #DDDDDD;
+}
+
+#perfil h2 {
+    color: #453346;
+}
+
+#perfil p {
+    font-size: 17px; 
+}
+
+/*-----ESTILOS PARA SECCION HABILIDADES-----*/
+#habilidades img {
+    width: 10%;
+    /*  margin-left: 400px;*/
+    margin-left: 45%;
+}
+
+#habilidades .box { 
+    background-color:#F5F5F5;
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border:2px solid #DDDDDD;
+}
+
+#habilidades h2 {
+    color: #453346;
+}
+
+#habilidades h3 {
+    color: #b53d4d;
+    text-align: center;
+}
+
+#habilidades p {
+    font-size: 17px; 
+}
+
+#habilidades ul { /*lista a dos columnas*/
+    column-count: 2;
+}
+
+/*-----ESTILOS PARA SECCION DE PROYECTOS-----*/
+#proyectos { /*esto le agrega un fondo gris*/
+    background-color: whitesmoke;
+}
+
+#proyectos .box {  /*columnas*/
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 1%; 
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #a32394;
+}
+
+#proyectos h2 { /*--formato del texto h2--*/
+    color: #453346;
+}
+
+#proyectos .box img {  /*ajustes a las imagenes*/
+    width: 90%;
+    padding: 30px 5px;
+}
+
+#proyectos .box p {  /*ajustes a la letra de etiqueta p*/
+    color: #281e28;
+    padding: 10px;
+    text-align: justify;
+}
+
+/*-----ESTILOS PARA SECCION DE FORMACION-----*/
+#formacion { /*esto le agrega un fondo gris*/
+    background-color: whitesmoke;
+}
+
+#formacion .box {  /*columnas*/
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin: 1%; 
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#formacion h2 { /*--formato del texto h2--*/
+    color: #453346;
+}
+
+#formacion .box img {  /*ajustes a las imagenes*/
+    width: 50%;
+    padding: 15px;
+}
+
+#formacion .box p {  /*ajustes a la letra de etiqueta p*/
+    color: #281e28;
+    padding: 10px;
+    text-align: justify;
+}
+
+/*-----REGLAS PARA SECCION DE CONTACTO-----*/
+#contacto {
+    background-color: #B7F7FB;
+    background-image: url('../images/contacto.png');/*--imagen q esta carpeta images--*/
+    background-position: center; /*--centrado--*/
+    background-repeat: no-repeat; 
+    text-align:  center;
+}
+
+#contacto h2 { /*--formato del texto h2--*/
+    color: #453346;
+}
+
+#contacto input { /*--formato del input--*/
+    padding: 20px;
+    width:  500px;
+    border: 1px solid #4877f4;
+    border-radius: 10px;
+}
+
+#contacto textarea {  /*--formato de los cuadros textarea--*/
+    margin: 20px 0;
+    padding: 20px;
+    width: 500px;
+    border: 1px solid #4877f4;
+    border-radius: 10px;
+}
+
+#contacto button { /*--formato para el boton de contacto--*/
+    background-color: #c9a8c5;
+    padding: 20px 40px;
+    border-color: #d29fcc;
+    border-radius: 3px;
+    color: black;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+/*-----SECCION REDES SOCIALES FINAL-----*/
+#final { /*--formato para este div--*/
+    background-color:#453346;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+#final .fa { /*--formato para todos los botones--*/
+    display: inline-block;
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 5px;
+    border-radius: 50%;
+    margin-right: 2%; 
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+#final .fa-facebook { /*--formato para el boton de facebook--*/
+    background: #3B5998;
+    color: white;
+
+}
+
+#final .fa-google { /*--formato para el boton de google--*/
+    background: #dd4b39;
+    color: white;
+}
+
+#final .fa-linkedin { /*--formato para el boton de linkedin--*/
+    background: #007bb5;
+    color: white;
+}
+
+#final .fa-github { /*--formato para el boton de youtube--*/
+    background: #bb0000;
+    color: white;
+}
+
+#final .fa-skype { /*--formato para el boton de skype--*/
+    background: #00aff0;
+    color: white;
+}
+
+#final .fa-address-book { /*--formato para el boton de email--*/
+    background: #ff6600;
+    color: white;
+}
+
+#final .fa-phone { /*--formato para el boton de telefono--*/
+    background: #ea4c89;
+    color: white;
+}
+
+/*-----REGLAS PARA TODAS LAS SECCIONES-----*/
+section {
+    padding: 40px 0;/*todas las secciones le pone espacio arriba y abajode 80 y a los lados cero*/
+}
+
+section h2 { /*en el section todoslos h2*/
+    font-size: 32px; /*tamaño de letra*/
+    text-align: center; /*alineado al centro*/
+    margin-bottom: 30px; /*espacio entre titulo y pararafo*/
+}
+
+/*-----CENTRAR DIV EN CSS-----*/
+.container { /*hay que ir al index y asignarsela al header*/
+    /*width: 992px;*/
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
